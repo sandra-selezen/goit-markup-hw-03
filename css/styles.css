@@ -13,6 +13,11 @@ body {
     color: var(--title-color);
 }
 
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
 /* Обнулення стилів для посилань та списків */
 
 .link {
