@@ -13,8 +13,14 @@ body {
     color: var(--title-color);
 }
 
+h1, h2, h3, p, ul {
+    margin: 0;
+}
+
 .container {
-    width: 1170px;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: 0 auto;
 }
 
@@ -54,6 +60,26 @@ body {
 }
 
 /* Header & Footer стилі */
+
+.header {
+    display: flex;
+    
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+.nav-link {
+    display: flex;
+}
+
+.header-contact {
+    display: flex;
+    align-content: flex-end;
+}
 
 .header-link {
     font-weight: 500;
@@ -111,14 +137,14 @@ body {
 /* Студія стилі */
 
 .hero {
+    text-align: center;
     background-color: var(--bg-color);
 }
 
 .hero-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 1, 4;
-    text-align: center;
+    line-height: 1,4;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
@@ -148,11 +174,21 @@ body {
     text-transform: uppercase;
 }
 
+.features-list {
+    display: flex;
+    justify-content: space-between;
+}
+
 .features-text {
     font-size: 14px;
     line-height: 1,7;
 
     color: var(--text-color);
+}
+
+.work-list {
+    display: flex;
+    justify-content: space-between;
 }
 
 .work-title,
@@ -161,6 +197,11 @@ body {
     font-size: 36px;
     line-height: 1,2;
     text-align: center;
+}
+
+.team-list {
+    display: flex;
+    justify-content: space-between;
 }
 
 .team-name {
@@ -178,6 +219,18 @@ body {
 }
 
 /* Портфоліо стилі */
+
+.button-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
 
 .portfolio-title {
     font-weight: 700;
@@ -201,6 +254,9 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
 
+    padding: 6px 22px;
+
+    border-width: 0;
     color: var(--title-color);
     background-color: #F5F4FA;
     
@@ -212,4 +268,5 @@ body {
 .filter-buttons:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
