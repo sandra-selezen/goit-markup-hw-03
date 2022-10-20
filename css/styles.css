@@ -61,27 +61,44 @@ h1, h2, h3, p, ul {
 
 /* Header & Footer стилі */
 
-.header {
+/* .header {
     display: flex;
     
+} */
+
+.main-nav {
+    display: flex;
 }
 
 .navigation {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 } 
 
 .nav-link {
     display: flex;
+    margin-left: 94px;
+}
+
+.nav-link-item,
+.header-contact-item {
+    margin-right: 50px;
+}
+
+.nav-link-item:last-child,
+.header-contact-item:last-child {
+    margin-right: 0;
 }
 
 .header-contact {
     display: flex;
-    align-content: flex-end;
+    margin-left: auto;
+    align-items: center;
 }
 
 .header-link {
+    display: block;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -138,6 +155,7 @@ h1, h2, h3, p, ul {
 
 .hero {
     text-align: center;
+    
     background-color: var(--bg-color);
 }
 
@@ -159,8 +177,8 @@ h1, h2, h3, p, ul {
 
     color: var(--primary-white-color);
 
-    width: 216px;
-    height: 50px;
+    padding: 10px 32px;
+
     border-radius: 4px;
     cursor: pointer;
     
@@ -176,7 +194,7 @@ h1, h2, h3, p, ul {
 
 .features-list {
     display: flex;
-    justify-content: space-between;
+    column-gap: 30px;
 }
 
 .features-text {
@@ -188,7 +206,7 @@ h1, h2, h3, p, ul {
 
 .work-list {
     display: flex;
-    justify-content: space-between;
+    column-gap: 30px;
 }
 
 .work-title,
@@ -201,7 +219,7 @@ h1, h2, h3, p, ul {
 
 .team-list {
     display: flex;
-    justify-content: space-between;
+    column-gap: 30px;
 }
 
 .team-name {
@@ -224,6 +242,15 @@ h1, h2, h3, p, ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 50px;
+}
+
+.button-list-item {
+    margin-right: 8px;
+}
+
+.button-list-item:last-child {
+    margin-right: 0;
 }
 
 .portfolio-list {
