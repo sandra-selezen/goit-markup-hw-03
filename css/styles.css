@@ -170,6 +170,7 @@ h1, h2, h3, p, ul {
 }
 
 .hero-button {
+    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1,9;
@@ -178,7 +179,7 @@ h1, h2, h3, p, ul {
     color: var(--primary-white-color);
 
     padding: 10px 32px;
-
+    border-width: 0;
     border-radius: 4px;
     cursor: pointer;
     
