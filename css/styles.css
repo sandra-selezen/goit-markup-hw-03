@@ -46,6 +46,10 @@ h1, h2, h3, p, ul {
     text-decoration: none;
 }
 
+.logo-footer {
+    margin-bottom: 20px;
+}
+
 .web-header,
 .web-footer {
     color: var(--accent-color);
@@ -60,11 +64,6 @@ h1, h2, h3, p, ul {
 }
 
 /* Header & Footer стилі */
-
-/* .header {
-    display: flex;
-    
-} */
 
 .main-nav {
     display: flex;
@@ -98,6 +97,8 @@ h1, h2, h3, p, ul {
 
 .header-link {
     display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
     font-weight: 500;
     font-size: 14px;
@@ -111,6 +112,9 @@ h1, h2, h3, p, ul {
 
 .header-email,
 .header-phone {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1,14;
@@ -128,7 +132,21 @@ h1, h2, h3, p, ul {
 }
 
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--bg-color);
+}
+
+.footer-list {
+    margin-bottom: 9px;
+}
+
+.footer-list:first-child {
+    margin-top: 20px;
+}
+
+.footer-list:last-child {
+    margin-bottom: 0;
 }
 
 .footer-address {
@@ -160,6 +178,7 @@ h1, h2, h3, p, ul {
 }
 
 .hero-title {
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1,4;
@@ -187,6 +206,7 @@ h1, h2, h3, p, ul {
 }
 
 .features-title {
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1,14;
@@ -212,6 +232,7 @@ h1, h2, h3, p, ul {
 
 .work-title,
 .team-title {
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1,2;
@@ -223,7 +244,12 @@ h1, h2, h3, p, ul {
     column-gap: 30px;
 }
 
+.team-photo {
+    margin-bottom: 30px;
+}
+
 .team-name {
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1,2;
@@ -261,6 +287,7 @@ h1, h2, h3, p, ul {
 }
 
 .portfolio-title {
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
