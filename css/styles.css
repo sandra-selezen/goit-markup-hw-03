@@ -4,6 +4,7 @@
     --title-color: #212121;
     --text-color: #757575;
     --bg-color: #2F303A;
+    --section-bg-color: #F5F4FA;
 }
 
 body {
@@ -22,6 +23,14 @@ h1, h2, h3, p, ul {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.section.no-padding {
+    padding-top: 0;
 }
 
 /* Обнулення стилів для посилань та списків */
@@ -65,8 +74,13 @@ h1, h2, h3, p, ul {
 
 /* Header & Footer стилі */
 
+.main-border {
+    border-bottom: 1px solid #ECECEC;
+}
+
 .main-nav {
     display: flex;
+
 }
 
 .navigation {
@@ -172,6 +186,8 @@ h1, h2, h3, p, ul {
 /* Студія стилі */
 
 .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
     
     background-color: var(--bg-color);
@@ -203,6 +219,10 @@ h1, h2, h3, p, ul {
     cursor: pointer;
     
     background-color: var(--accent-color);
+}
+
+.hero-button:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .features-title {
@@ -237,6 +257,10 @@ h1, h2, h3, p, ul {
     font-size: 36px;
     line-height: 1,2;
     text-align: center;
+}
+
+.section.team {
+    background-color: var(--section-bg-color);
 }
 
 .team-list {
