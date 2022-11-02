@@ -9,6 +9,7 @@
     --primary-black-color: #000000;
     --header-border-color: #ECECEC;
     --footer-contact-color: rgba(255, 255, 255, 0.6);
+    --hero--button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     --team-card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -19,9 +20,13 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
     letter-spacing: 0.03em;
 
-    color: var(--title-color);
+    color: var(--text-color);
+    background-color: var(--primary-white-color);
 }
 
 h1, h2, h3, p, ul {
@@ -61,7 +66,17 @@ img {
 /* Сховані заголовки */
 
 .hide {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 /* Лого стилі */
@@ -177,9 +192,6 @@ img {
 
 .footer-address {
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
 
     color: var(--primary-white-color);
 }
@@ -187,14 +199,11 @@ img {
 .footer-email,
 .footer-phone {
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
 
     color: var(--footer-contact-color);
 }
 
-/* Студія стилі */
+/* Hero стилі */
 
 .hero {
     padding-top: 200px;
@@ -234,15 +243,24 @@ img {
 }
 
 .hero-button:hover {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--hero--button-shadow);
+}
+
+/* Студія стилі */
+
+.features,
+.work {
+    background-color: inherit;
 }
 
 .features-title {
     margin-bottom: 10px;
     font-weight: 700;
-    font-size: 14px;
+    font-size: inherit;
     line-height: 1.14;
     text-transform: uppercase;
+
+    color: var(--title-color);
 }
 
 .features-list {
@@ -251,14 +269,7 @@ img {
 }
 
 .features-card {
-    flex-basis: calc(100% / 4);
-}
-
-.features-text {
-    font-size: 14px;
-    line-height: 1.7;
-
-    color: var(--text-color);
+    flex-basis: calc((100% - 90px) / 4);
 }
 
 .work-list {
@@ -267,11 +278,7 @@ img {
 }
 
 .work-card {
-    flex-basis: calc(100% / 3);
-}
-
-.work-img {
-    display: block;
+    flex-basis: calc((100% - 60px) / 3);
 }
 
 .work-title,
@@ -281,6 +288,8 @@ img {
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
+
+    color: var(--title-color);
 }
 
 .section.team {
@@ -293,7 +302,7 @@ img {
 }
 
 .team-card {
-    flex-basis: calc(100% / 4);
+    flex-basis: calc((100% - 90px) / 4);
 
     box-shadow: var(--team-card-shadow);
     border-radius: 0px 0px 4px 4px;
@@ -310,6 +319,8 @@ img {
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
+
+    color: var(--title-color);
 }
 
 .team-position {
@@ -368,12 +379,11 @@ img {
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 30px;
-    column-gap: 30px;
+    gap: 30px;
 }
 
 .portfolio-card {
-    flex-basis: calc(100% / 3 - 30px);
+    flex-basis: calc(100% / 3 - 60px);
     background-color: var(--primary-white-color);
 }
 
@@ -391,11 +401,11 @@ img {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+
+    color: var(--title-color);
 }
 
 .portfolio-text {
     font-size: 16px;
     line-height: 1.9;
-    
-    color: var(--text-color);
 }
