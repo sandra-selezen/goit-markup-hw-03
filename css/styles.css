@@ -178,12 +178,12 @@ img {
     background-color: var(--bg-color);
 }
 
-.footer-list {
-    margin-bottom: 9px;
+#contacts {
+    margin-top: 20px;
 }
 
-.footer-list:first-child {
-    margin-top: 20px;
+.footer-list {
+    margin-bottom: 9px;
 }
 
 .footer-list:last-child {
@@ -226,7 +226,6 @@ img {
 
 .hero-button {
     font-family: inherit;
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
@@ -242,7 +241,8 @@ img {
     background-color: var(--accent-color);
 }
 
-.hero-button:hover {
+.hero-button:hover,
+.hero-button:focus {
     box-shadow: var(--hero--button-shadow);
 }
 
@@ -352,11 +352,9 @@ img {
 
 .filter-buttons {
     font-family: inherit;
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
-    text-align: center;
     letter-spacing: 0.03em;
 
     padding: 6px 22px;
